@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 interface MousePosition {
 	x: number;
 	y: number;
@@ -25,3 +26,7 @@ export function useMousePosition(): MousePosition {
 
 	return mousePosition;
 }
+
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs));
+  }
