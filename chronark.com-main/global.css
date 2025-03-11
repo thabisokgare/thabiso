@@ -4,7 +4,78 @@
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
+}
 
+@keyframes float-0 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float-0 {
+  animation: float-0 6s ease-in-out infinite;
+}
+
+.animate-float-1 {
+  animation: float-1 8s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 10s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 12s ease-in-out infinite;
+}
