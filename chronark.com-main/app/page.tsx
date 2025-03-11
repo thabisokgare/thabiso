@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { LampDemo } from "./components/lamp";
 import Particles from "./components/particles";
